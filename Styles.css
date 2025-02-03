@@ -8,6 +8,64 @@
    transform: scaleX(1.8); /* Estira solo en el eje X */
 }
 
-.separated-element {
-   margin-right: 0px; /* Ajusta este valor según necesites */
+
+.custom-navbar {
+   width: 100%;
+   background-color: #2D2B2B;
+   padding: 15px 0; /* Más altura para la barra */
  }
+ 
+ .custom-nav-list {
+   gap: 87px; /* Mayor espacio entre elementos */
+ }
+ 
+ .custom-nav-list .nav-item {
+   margin: 0 15px; /* Espacio adicional entre los elementos */
+ }
+ 
+ .custom-nav-list .nav-link {
+   color: white !important;
+   font-size: 18px; /* Texto más grande */
+   padding: 15px 25px; /* Más espaciado interno */
+ }
+ 
+ .custom-nav-list .nav-link:hover {
+   color: #d1d1d1 !important; /* Color más claro al pasar el mouse */
+ }
+ 
+ /* Botón especial para "Agenda tu Cita" */
+ .agenda-btn {
+   background-color: #ff5722;
+   border-radius: 5px;
+   padding: 12px 25px;
+   font-weight: bold;
+ }
+ 
+ .agenda-btn:hover {
+   background-color: #e64a19;
+   color: white !important;
+ }
+   
+
+ .custom-toggler {
+   border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+   filter: invert(1);
+}
+
+/* Ajusta el espaciado del menú hamburguesa en móviles */
+@media (max-width: 768px) {
+   .custom-nav-list {
+       padding: 0;
+       margin: 0;
+       gap: 5px; /* Reduce el espacio entre elementos */
+   }
+   .custom-nav-list .nav-item {
+       margin: 2px 0; /* Reduce aún más la separación */
+   }
+   .custom-nav-list .nav-link {
+       padding: 8px 10px; /* Ajusta el padding para una apariencia compacta */
+       font-size: 14px; /* Reduce el tamaño de fuente si es necesario */
+   }
+}

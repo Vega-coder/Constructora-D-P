@@ -12,87 +12,93 @@
 </head>
 <body>
   <!-- Encabezado de la página -->
-  <header>
-    <div class="container-fluid py-3">
-        <div class="row align-items-center">
-            <!-- Logo de la empresa -->
-            <div class="col-md-4 col-12 text-center text-md-start">
-                <img src="assets/Logo.ico" alt="Constructora D&P" class="logo img-fluid">
-            </div>
-
-            <div class="col-md-8 col-12">
-              <div class="row text-center">
+  
+  <header class="container-fluid py-3">
+    <div class="row align-items-center">
+        <!-- Logo de la empresa (centrado en móviles, alineado a la izquierda en desktop) -->
+        <div class="col-md-4 col-12 d-flex justify-content-center justify-content-md-start">
+            <img src="assets/Logo.ico" alt="Constructora D&P" class="logo img-fluid">
+        </div>
+        <!-- Información de contacto (oculto en móviles) -->
+        <div class="col-md-8 col-12 d-none d-md-block">
+            <div class="row text-center gy-3">
                 <!-- Columna 1: Contáctanos -->
-                <div class="col-md-4 d-flex align-items-center justify-content-center" style="margin-left: -20px;">
-                  <i class="bi bi-telephone separated-element"></i>
-                  <i class="bi bi-arrow-right separated-element"></i>
-                  <img src="assets/enhanced_image.png" width="200px" height="100px" alt="" class="separated-element">
-                  <div class="text">
-                    <strong>Contáctanos</strong><br>
-                    3175123008 / 3182531778
-                  </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-telephone"></i>
+                    <i class="bi bi-arrow-right"></i>
+                    <img src="assets/enhanced_image.png" class="img-fluid" width="130" alt="">
+                    <div class="text">
+                        <strong>Contáctanos</strong><br>
+                        3175123008 / 3182531778
+                    </div>
                 </div>
                 <!-- Columna 2: Visítenos -->
-                <div class="col-md-4 d-flex align-items-center justify-content-center" style="margin-left: -20px;">
-                  <img src="assets/enhanced_image.png" width="200px" height="100px" alt="" class="separated-element">
-                  <div class="text">
-                    <strong>Visítenos</strong><br>
-                    Calle 11 #18-25<br>Ocaña N.S
-                  </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center gap-2">
+                    <img src="assets/enhanced_image.png" class="img-fluid" width="130" alt="">
+                    <div class="text">
+                        <strong>Visítenos</strong><br>
+                        Calle 11 #18-25<br>Ocaña N.S
+                    </div>
                 </div>
                 <!-- Columna 3: Escríbenos -->
-                <div class="col-md-4 d-flex align-items-center justify-content-center" style="margin-left: -20px;">
-                  <img src="assets/enhanced_image.png" width="200px" height="100px" alt="" class="separated-element">
-                  <div class="text">
-                    <strong>Escríbenos</strong><br>
-                    rentbilitaria@gmail.com
-                  </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center gap-2">
+                    <img src="assets/enhanced_image.png" class="img-fluid" width="130" alt="">
+                    <div class="text">
+                        <strong>Escríbenos</strong><br>
+                        rentbilitaria@gmail.com
+                    </div>
                 </div>
-              </div>
             </div>
+        </div>
+    </div>
 </header>
 
-        <!-- Barra de navegación -->
-        <div class="col-md-8 col-12">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <!-- Botón de menú para dispositivos móviles -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Barra de navegación -->
+<div class="col-12">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <!-- Botón de menú para dispositivos móviles -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- Menú de navegación -->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                  </li>
+            </button>
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav custom-nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link agenda-btn" href="#">Agenda tu Cita</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
         </div>
-      </div>
-    </div>
-  </header>
+    </nav>
+</div>
+   
 
   <!-- Carrusel principal -->
   <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <!-- Imágenes del carrusel -->
       <div class="carousel-item active">
-        <img src="assets/Logo.ico" class="d-block w-100" alt="Slide 1" width="200px" height="200px">
+        <img src="assets/Plantas unidas_7 - Photo.jpg" class="d-block w-100" alt="Slide 1" width="350px" height="200px">
       </div>
       <div class="carousel-item">
-        <img src="assets/Logo.ico" class="d-block w-100" alt="Slide 1" width="200px" height="200px">
+        <img src="assets/Plantas unidas_7 - Photo.jpg" class="d-block w-100" alt="Slide 1" width="350px" height="200px">
       </div>
       <div class="carousel-item">
         <img src="assets/Logo.ico" class="d-block w-100" alt="Slide 1" width="200px" height="200px">
