@@ -1,0 +1,13 @@
+.logo {
+   max-width: 80px; /* Ajusta el tamaño máximo */
+   width: 40%; /* Permite que se adapte al contenedor */
+   height: auto; /* Mantiene la proporción */
+   object-fit: contain; /* Evita distorsión */
+   margin-left: 70px; /* Espacio entre el logo y el resto del contenido */
+   transition: transform 0.5s ease; /* Efecto de animación */
+   transform: scaleX(1.8); /* Estira solo en el eje X */
+}
+
+.separated-element {
+   margin-right: 0px; /* Ajusta este valor según necesites */
+ }
