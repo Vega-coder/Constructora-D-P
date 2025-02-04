@@ -13,7 +13,7 @@
 <body>
   <!-- Encabezado de la página -->
   
-  <header class="container-fluid py-3">
+  <header class="container-fluid py-3" style="padding: 70px;">
     <div class="row align-items-center">
         <!-- Logo de la empresa (centrado en móviles, alineado a la izquierda en desktop) -->
         <div class="col-md-4 col-12 d-flex justify-content-center justify-content-md-start">
@@ -91,72 +91,84 @@
    
 
   <!-- Carrusel principal -->
-  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Imágenes del carrusel -->
-      <div class="carousel-item active">
-        <img src="assets/Plantas unidas_7 - Photo.jpg" class="d-block w-100" alt="Slide 1" width="350px" height="200px">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/Plantas unidas_7 - Photo.jpg" class="d-block w-100" alt="Slide 1" width="350px" height="200px">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/Logo.ico" class="d-block w-100" alt="Slide 1" width="200px" height="200px">
-      </div>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <!-- Controles del carrusel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/Plantas unidas_7 - Photo.jpg" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/Plantas unidas_7 - Photo.jpg" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/Plantas unidas_7 - Photo.jpg" class="d-block w-100" alt="Imagen 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
 
   <!-- Sección "Sobre Nosotros" -->
-  <section class="about py-5">
+ 
+  <section class="about py-5 d-flex align-items-center justify-content-center">
     <div class="container">
-      <div class="row align-items-center">
-        <!-- Texto sobre la empresa -->
-        <div class="col-md-6 text-center">
-          <h2>Sobre Nosotros</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor ligula. Donec vitae enim vel est faucibus consectetur. Sed vel ipsum in ex fermentum convallis. Duis vel neque vel erat pellentesque tristique. Nullam at urna et erat tincidunt consectetur vel at turpis. Donec viverra, est vel semper egestas, turpis neque rutrum neque, sed consectetur dolor sapien non purus.</p>
-          <button type="button" class="btn btn-primary">Más Información</button>
-        </div>
-        <!-- Imagen de la sección -->
-        <div class="col-md-6">
-          <img src="assets/about.jpg" alt="Sobre Nosotros" class="img-fluid rounded">
+      <div class="row justify-content-center">
+        <!-- Texto sobre la empresa centrado -->
+        <div class="col-md-8 text-center">
+          <h2 class="mb-4" style="font-size: 2rem;">Sobre Nosotros</h2>
+          <p class="mb-4" style="font-size: 1.2rem;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor ligula. 
+            Donec vitae enim vel est faucibus consectetur. Sed vel ipsum in ex fermentum convallis. 
+            Duis vel neque vel erat pellentesque tristique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et eos dolorum debitis officia laborum, voluptate, eius asperiores aliquam cum explicabo sapiente pariatur dignissimos amet voluptas in nulla? Distinctio, dolores?
+          </p>
+          <button type="button" class="btn btn-primary btn-lg">Más Información</button>
         </div>
       </div>
     </div>
   </section>
+  
 
-  <!-- Segundo carrusel -->
-  <div id="secondaryCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Imágenes del segundo carrusel -->
-      <div class="carousel-item active">
-        <img src="assets/Logo.ico" class="d-block w-100" alt="Proyecto 1" width="200px" height="200px">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/Logo.ico" class="d-block w-100" alt="Slide 1" width="200px" height="200px">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/Logo.ico" class="d-block w-100" alt="Slide 1" width="200px" height="200px">
+  <section class="services-gallery py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="horizontal-scroll d-flex overflow-auto">
+            <!-- Imagen 1 -->
+            <a href="https://example.com/construccion" class="service-item text-center">
+              <img src="assets/Plantas unidas_7 - Photo.jpg" class="img-fluid rounded" alt="Construcción">
+              <h5 class="mt-2">Construcción</h5>
+            </a>
+            <!-- Imagen 2 -->
+            <a href="https://example.com/consultoria" class="service-item text-center">
+              <img src="imagen2.jpg" class="img-fluid rounded" alt="Consultoría">
+              <h5 class="mt-2">Consultoría</h5>
+            </a>
+            <!-- Imagen 3 -->
+            <a href="https://example.com/diseno-arquitectonico" class="service-item text-center">
+              <img src="imagen3.jpg" class="img-fluid rounded" alt="Diseño Arquitectónico">
+              <h5 class="mt-2">Diseño Arquitectónico</h5>
+            </a>
+            <!-- Imagen 4 -->
+            <a href="https://example.com/legalizacion" class="service-item text-center">
+              <img src="imagen4.jpg" class="img-fluid rounded" alt="Legalización de Predios">
+              <h5 class="mt-2">Legalización de Predios</h5>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Controles del segundo carrusel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#secondaryCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#secondaryCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
+  
 
   <!-- Sección de servicios -->
   <section class="services py-5">

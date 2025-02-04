@@ -1,11 +1,11 @@
-.logo {
+ .logo {
    max-width: 80px; /* Ajusta el tamaño máximo */
    width: 40%; /* Permite que se adapte al contenedor */
    height: auto; /* Mantiene la proporción */
    object-fit: contain; /* Evita distorsión */
    margin-left: 70px; /* Espacio entre el logo y el resto del contenido */
    transition: transform 0.5s ease; /* Efecto de animación */
-   transform: scaleX(1.8); /* Estira solo en el eje X */
+   transform: scaleX(2.5); /* Estira solo en el eje X */
 }
 
 
@@ -30,7 +30,7 @@
  }
  
  .custom-nav-list .nav-link:hover {
-   color: #d1d1d1 !important; /* Color más claro al pasar el mouse */
+   color: #b61717 !important; /* Color más claro al pasar el mouse */
  }
  
  /* Botón especial para "Agenda tu Cita" */
@@ -69,3 +69,61 @@
        font-size: 14px; /* Reduce el tamaño de fuente si es necesario */
    }
 }
+ /* Ajusta el tamaño y color del logo en móviles */
+  .carousel-item img {
+    height: 500px; /* Altura fija */
+    object-fit: cover; /* Corta la imagen para llenar el contenedor */
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px; /* Menor altura en pantallas pequeñas */
+    }
+  }
+
+
+
+  
+ 
+  .horizontal-scroll {
+    display: flex;
+    gap: 15px; /* Espacio entre las imágenes */
+    padding-bottom: 10px; /* Espacio inferior */
+    scrollbar-width: thin; /* Tamaño de la barra de desplazamiento en navegadores compatibles */
+  }
+
+  .horizontal-scroll::-webkit-scrollbar {
+    height: 8px; /* Altura de la barra de desplazamiento */
+  }
+
+  .horizontal-scroll::-webkit-scrollbar-thumb {
+    background-color: #cccccc; /* Color del "thumb" del scroll */
+    border-radius: 10px;
+  }
+
+  .service-item {
+    width: 200px; /* Ajusta el tamaño de las imágenes */
+    text-decoration: none;
+  }
+
+  .service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .service-item h5 {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .service-item:hover img {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+  }
+
+  .service-item:hover h5 {
+    color: #007bff; /* Cambia el color del texto al hacer hover */
+  }
+ 
