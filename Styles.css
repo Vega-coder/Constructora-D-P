@@ -142,12 +142,153 @@
     text-align: center;
 }
 
-.titulo::after {
-  content: "";
-  display: block;
-  width:80%;
-  height: 2px;
-  background-color: black;
-  margin-top: 5px;
-  margin-left:80px;
+.contenedor-servicios {
+  max-width: 900px; /* Ajusta el ancho del contenedor */
+  margin: 0 auto; /* Centrar en la pantalla */
 }
+
+.servicio-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px; /* Espacio entre filas */
+}
+
+.servicio-item img {
+  width: 100%;
+  max-width: 350px; /* Tamaño fijo de imágenes */
+  height: auto;
+  border-radius: 5px;
+}
+
+.servicio-texto {
+  padding-left: 20px; /* Espacio entre imagen y texto */
+  flex: 1;
+}
+
+.servicio-texto h5 {
+  margin-top: 0; /* Asegurar que el título empieza arriba */
+  font-weight: bold;
+}
+
+.btn-custom {
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 15px; /* Tamaño exacto del botón */
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Alternar imagen y texto */
+.invertido {
+  flex-direction: row-reverse;
+}
+.contenedor-servicios {
+  max-width: 900px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Sección de servicios */
+.servicio-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px; /* Espaciado entre servicios */
+}
+
+/* Ajuste de imágenes */
+.servicio-item img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Texto de servicios */
+.servicio-texto {
+  padding-left: 20px;
+  flex: 1;
+}
+
+/* Alineación del título */
+.servicio-texto h5 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* Estilos de botón */
+.btn-custom {
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Alternar imagen y texto */
+.invertido {
+  flex-direction: row-reverse;
+}
+
+   /* Contenedor principal */
+   .container {
+    max-width: 800px; /* Ancho fijo para centrar */
+}
+
+/* Imagen de cabecera */
+.team-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo de cada ingeniero */
+.ingeniero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Imagen de los ingenieros */
+.ingeniero img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Texto de los ingenieros */
+.ingeniero-texto {
+    flex: 1;
+}
+
+
+
+.footer {
+  background-color: #333; /* Color oscuro */
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
